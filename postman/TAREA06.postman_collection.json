@@ -1,0 +1,35 @@
+{
+  "info": {
+    "_postman_id": "23081ab3-f782-4420-91ec-08cf31f5f933",
+    "name": "TAREA06",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55960105",
+    "_collection_link": "https://go.postman.co/collection/55960105-23081ab3-f782-4420-91ec-08cf31f5f933?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "users",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "posts_1",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "posts",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
