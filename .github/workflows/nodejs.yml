@@ -1,29 +1,34 @@
-name: Node.js CI
+name: Debug CI
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
-  build:
+  debug:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js (usar Node 24)
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
+      - name: Node version
+        run: node -v
+
+      - name: NPM version
+        run: npm -v
+
+      - name: List files
+        run: ls -la
 
       - name: Install dependencies
         run: npm install
 
-      - name: Verify Jest
+      - name: Check node_modules
+        run: ls node_modules
+
+      - name: Check Jest
         run: npx jest --version
 
-      - name: Run tests
-        run: npm test
+      - name: Run tests (debug)
+        run: npx jest --detectOpenHandles --verbose
