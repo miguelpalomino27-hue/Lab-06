@@ -32,3 +32,6 @@ jobs:
 
       - name: Run tests (debug)
         run: npx jest --detectOpenHandles --verbose
+
+      - name: Run tests
+        run: npx jest tests/api
