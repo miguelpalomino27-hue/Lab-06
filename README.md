@@ -1,3 +1,4 @@
+![CI](https://github.com/miguelpalomino27-hue/Lab-06/actions/workflows/nodejs.yml/badge.svg)
 ## 👨‍💻 Autor
 Miguel Palomino Cárdenas
 
